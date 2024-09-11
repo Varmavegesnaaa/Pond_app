@@ -26,7 +26,7 @@ const FeedComponent = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/feed-stock/add', {
+      const response = await fetch('https://pond-app-backend.vercel.app/feed-stock/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
