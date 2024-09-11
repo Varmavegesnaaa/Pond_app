@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    background-color: blue; /* Set background to blue */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Back arrow styling */
+  .back-arrow {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  /* Centered title */
+  h1 {
+    color: white; /* White text for the title */
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox container for left and right sections */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white; /* White text for content */
+  }
+  
+  /* Left section */
+  .left {
+    width: 48%; /* Take up 48% of the width */
+    text-align: center; /* Ensure content aligns to the left */
+    border: 2px solid white;
+
+  }
+  
+  /* Right section */
+  .right {
+    width: 48%; /* Take up 48% of the width */
+    text-align: center; /* Keep text aligned to the left */
+    border: 2px solid white;
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack left and right on top of each other */
+    }
+  
+    .left, .right {
+      width: 100%; /* Full width for both sections */
+    }
+  
+    h1 {
+      font-size: 24px; /* Adjust title size for smaller screens */
+    }
+  
+    p {
+      font-size: 16px; /* Adjust paragraph size */
+    }
+  }
+  
