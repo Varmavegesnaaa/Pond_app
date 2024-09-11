@@ -15,7 +15,7 @@ const FeedListComponent = () => {
   useEffect(() => {
     const fetchFeeds = async () => {
       try {
-        const response = await fetch('https://pond-app-backend.vercel.app/feeds');
+        const response = await fetch('https://pond-app-backend-z2yl.vercel.app/feeds');
         const data = await response.json();
 
         // Log data to verify its structure
