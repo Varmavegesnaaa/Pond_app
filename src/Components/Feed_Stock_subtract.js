@@ -27,7 +27,7 @@ const FeedComponent = () => {
     const negativeFeedCount = feedData.feed_count > 0 ? -Math.abs(feedData.feed_count) : feedData.feed_count;
 
     try {
-      const response = await fetch('https://pond-app-backend-z2yl.vercel.app/feed-stock/add', {
+      const response = await fetch('https://pond-app-backend.vercel.app/feed-stock/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
