@@ -1,7 +1,7 @@
 function Balance_Sheet(){
     return(
         <div>
-            <h1>Balance_Sheet</h1>
+            <h1>Balance_Sheet hello</h1>
         </div>
     )
 }
