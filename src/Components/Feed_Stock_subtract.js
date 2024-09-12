@@ -29,6 +29,7 @@ const FeedComponent = () => {
     try {
       const response = await fetch('https://pond-app-backend.vercel.app/feed-stock/add', {
         method: 'POST',
+        mode:'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
